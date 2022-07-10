@@ -12,7 +12,6 @@ elif sys.platform == "darwin":
     
 rc('font',family=font_name)    
 
-
 app= Flask(__name__)
 
 @app.route('/')

@@ -121,6 +121,18 @@ body::-webkit-scrollbar-track {
 }
 
 /* navbar 반응형 */
+@media screen and (max-width: 1100px) {
+    .logo {
+        top: 10px;
+        left: 0px;
+    }
+}
+@media screen and (max-width: 1055px) {
+    .logo {
+        top: 22px;
+        left: 0px;
+    }
+}
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -160,6 +172,7 @@ body::-webkit-scrollbar-track {
         text-align: center;
     }
 }
+
 
 /* container @@@@@@@@@@@@@@@ 여기에 작업 @@@@@@@@@@@@@@@ */
 .container {

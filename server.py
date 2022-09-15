@@ -2,7 +2,11 @@ from flask import Flask, render_template, url_for, request, redirect
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
+
 from matplotlib import font_manager, rc
 import sys
 if sys.platform in ["win32", "win64"]:
@@ -11,6 +15,7 @@ elif sys.platform == "darwin":
     font_name = "AppleGothic"
     
 rc('font',family=font_name)    
+
 
 app= Flask(__name__)
 

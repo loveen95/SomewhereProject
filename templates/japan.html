@@ -4,8 +4,6 @@
         padding: 0;
         background-color: rgba(172, 200, 204, 0.481);
         display: inline-block;
-        padding-top: 130px;
-        padding-bottom: 30px;
         margin: 0;
     }
     
@@ -34,36 +32,37 @@
         width: 100%;
         margin: 0 auto;
         position: absolute;
-        top: 150px;
+        padding-top: 50px;
+    }
+    .key {
+      padding-top: 140px;
     }
     .japan_info {
+        width: 100%;
         margin: 0 auto;
-        padding: 0;
-        height: 440px;
+        padding-top: 40px;
     }
     .bg_japan {
         width: 600px;
         height: 440px;
-        display: inline-block;
         margin-right: 20px;
     }
     .japan_keyword {
+        width: 600px;
         height: 440px;
-        display: inline-block;
         margin-left: 20px;
     }
 </style>
 <div class="container">
-  <br>
-  <h2>SNS 키워드로 알아보는 일본</h2>
-  <br>
   <div class="nation">
     <a href="/china"><img class="cn" src="{{url_for('static', filename = '/img/CN.PNG')}}"></a>
     <a href="/usa"><img class="us" src="{{url_for('static', filename = '/img/US.PNG')}}"></a>
     <a href="/tai"><img class="ta" src="{{url_for('static', filename = '/img/TA.PNG')}}"></a>
     <a href="/veit"><img class="ve" src="{{url_for('static', filename = '/img/VE.PNG')}}"></a>
   </div>
-  <br>
+  <div class="key">
+    <h2>SNS 키워드로 알아보는 일본</h2>
+  </div>
   <div class="japan_info">
     <img class="bg_japan" src= "{{url_for('static', filename='/img/bg_japan.jpg')}}"/>
     <img class="japan_keyword" src="{{url_for('static', filename = '/img/japan_2.png')}}">
